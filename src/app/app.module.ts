@@ -6,6 +6,8 @@ import { StoreModule } from "@ngrx/store";
 
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
+import { BookListComponent } from "./book-list/book-list.component";
+import { BookCollectionComponent } from "./book-collection/book-collection.component";
 
 @NgModule({
   imports: [
@@ -16,7 +18,7 @@ import { HttpClientModule } from "@angular/common/http";
     }),
     HttpClientModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, BookListComponent, BookCollectionComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
